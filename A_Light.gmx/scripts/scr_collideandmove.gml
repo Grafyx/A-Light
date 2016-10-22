@@ -1,6 +1,6 @@
 //Horizontal Collisions
-if (place_meeting(x+hspd,y,o_wall)) {
-    while (!place_meeting(x+sign(hspd),y,o_wall)) {
+if (place_meeting(x+hspd,y,par_solid)) {
+    while (!place_meeting(x+sign(hspd),y,par_solid)) {
         x += sign(hspd); 
     }
     hspd = 0;
@@ -8,8 +8,8 @@ if (place_meeting(x+hspd,y,o_wall)) {
 x += hspd
 
 //Vertical Collisions
-if (place_meeting(x,y+vspd,o_wall)) {
-    while (!place_meeting(x,y+sign(vspd),o_wall)) {
+if (place_meeting(x,y+vspd,par_solid)) {
+    while (!place_meeting(x,y+sign(vspd),par_solid)) {
         y += sign(vspd);    
     }
     vspd = 0;   
