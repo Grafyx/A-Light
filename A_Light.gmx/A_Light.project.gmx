@@ -4,48 +4,57 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_background</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
-    <sprite>sprites\s_wall</sprite>
-    <sprite>sprites\s_spike</sprite>
-    <sprite>sprites\s_tree</sprite>
-    <sprite>sprites\s_grass</sprite>
     <sprite>sprites\s_coin</sprite>
     <sprite>sprites\s_checkpoint</sprite>
-    <sprite>sprites\s_splash_player</sprite>
+    <sprite>sprites\s_throwingknife</sprite>
+    <sprite>sprites\s_slash</sprite>
+    <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_ladder</sprite>
     <sprite>sprites\s_platform</sprite>
+    <sprite>sprites\s_tree</sprite>
+    <sprite>sprites\s_grass</sprite>
+    <sprite>sprites\s_spike</sprite>
     <sprite>sprites\s_enemy</sprite>
+    <sprite>sprites\s_splash_player</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_splashscreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_ladder.gml</script>
-    <script>scripts\scr_playerdeath.gml</script>
-    <script>scripts\scr_collideandmove.gml</script>
     <script>scripts\scr_getinputs.gml</script>
+    <script>scripts\scr_ladder.gml</script>
     <script>scripts\scr_normal.gml</script>
+    <script>scripts\scr_collideandmove.gml</script>
+    <script>scripts\scr_playerdeath.gml</script>
+    <script>scripts\scr_attack.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_coins</font>
   </fonts>
   <objects name="objects">
     <object>objects\o_player</object>
+    <object>objects\o_coin</object>
+    <object>objects\o_checkpoint</object>
+    <object>objects\o_throwingknife</object>
+    <object>objects\o_slash</object>
     <object>objects\o_wall</object>
-    <object>objects\o_spike</object>
+    <object>objects\o_ladder</object>
+    <object>objects\o_platform</object>
     <object>objects\o_tree</object>
     <object>objects\o_grass</object>
-    <object>objects\o_coin</object>
-    <object>objects\o_coin_count</object>
-    <object>objects\o_checkpoint</object>
-    <object>objects\o_splash_timer</object>
-    <object>objects\o_splash_player</object>
-    <object>objects\o_platform</object>
-    <object>objects\o_ladder</object>
+    <object>objects\o_spike</object>
     <object>objects\o_enemy</object>
+    <object>objects\o_splash_player</object>
+    <object>objects\o_splash_timer</object>
+    <object>objects\o_coin_count</object>
+    <object>objects\par_solid</object>
+    <object>objects\par_collideable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_splash</room>
