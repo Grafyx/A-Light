@@ -1,6 +1,7 @@
-if (global.checkpoint_room != 0) {
+if (global.checkpoint != noone) {
+    if (global.checkpoint_room != room) {
+        room_goto(global.checkpoint_room);
+    }
     x = global.checkpoint_x;
     y = global.checkpoint_y;
-} else {
-    room_restart();
-}
+}    

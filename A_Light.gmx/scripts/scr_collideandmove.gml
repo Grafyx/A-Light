@@ -9,9 +9,11 @@ x += hspd
 
 //Vertical Collisions
 if (place_meeting(x,y+vspd,par_solid)) {
-    while (!place_meeting(x,y+sign(vspd),par_solid)) {
-        y += sign(vspd);    
+    if (sign(vspd) == 1 or !place_meeting(x,y+vspd,o_platform)) {
+        while (!place_meeting(x,y+sign(vspd),par_solid)) {
+            y += sign(vspd);    
+        }
+        vspd = 0;
     }
-    vspd = 0;   
-} 
+}
 y += vspd

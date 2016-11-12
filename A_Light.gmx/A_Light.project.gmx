@@ -8,19 +8,25 @@
     <sound>sound\snd_background</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\s_player</sprite>
-    <sprite>sprites\s_coin</sprite>
-    <sprite>sprites\s_checkpoint</sprite>
-    <sprite>sprites\s_throwingknife</sprite>
-    <sprite>sprites\s_slash</sprite>
-    <sprite>sprites\s_wall</sprite>
-    <sprite>sprites\s_ladder</sprite>
-    <sprite>sprites\s_platform</sprite>
-    <sprite>sprites\s_tree</sprite>
-    <sprite>sprites\s_grass</sprite>
-    <sprite>sprites\s_spike</sprite>
-    <sprite>sprites\s_enemy</sprite>
-    <sprite>sprites\s_splash_player</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_coin</sprite>
+    <sprite>sprites\spr_checkpoint</sprite>
+    <sprite>sprites\spr_throwingknife</sprite>
+    <sprite>sprites\spr_slash</sprite>
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_ladder</sprite>
+    <sprite>sprites\spr_platform</sprite>
+    <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_grass</sprite>
+    <sprite>sprites\spr_spike</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_splash_player</sprite>
+    <sprite>sprites\spr_landmine</sprite>
+    <sprite>sprites\spr_controls</sprite>
+    <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_danger</sprite>
+    <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_alert</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_splashscreen</background>
@@ -30,35 +36,58 @@
     <script>scripts\scr_getinputs.gml</script>
     <script>scripts\scr_ladder.gml</script>
     <script>scripts\scr_normal.gml</script>
+    <script>scripts\scr_alert.gml</script>
+    <script>scripts\scr_gravity.gml</script>
     <script>scripts\scr_collideandmove.gml</script>
-    <script>scripts\scr_playerdeath.gml</script>
     <script>scripts\scr_attack.gml</script>
+    <script>scripts\scr_playerdeath.gml</script>
+    <script>scripts\scr_messages.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_coins</font>
+    <font>fonts\f_button</font>
   </fonts>
   <objects name="objects">
     <object>objects\o_player</object>
+    <objects name="Player related">
+      <object>objects\o_throwingknife</object>
+      <object>objects\o_slash</object>
+      <object>objects\par_weapons</object>
+      <object>objects\obj_alert</object>
+    </objects>
     <object>objects\o_coin</object>
     <object>objects\o_checkpoint</object>
-    <object>objects\o_throwingknife</object>
-    <object>objects\o_slash</object>
     <object>objects\o_wall</object>
     <object>objects\o_ladder</object>
     <object>objects\o_platform</object>
-    <object>objects\o_tree</object>
-    <object>objects\o_grass</object>
-    <object>objects\o_spike</object>
-    <object>objects\o_enemy</object>
     <object>objects\o_splash_player</object>
     <object>objects\o_splash_timer</object>
     <object>objects\o_coin_count</object>
-    <object>objects\par_solid</object>
     <object>objects\par_collideable</object>
+    <object>objects\par_solid</object>
+    <objects name="Hazards">
+      <object>objects\par_hazards</object>
+      <object>objects\o_landmine</object>
+      <object>objects\o_spike</object>
+      <object>objects\o_enemy</object>
+    </objects>
+    <object>objects\obj_button</object>
+    <object>objects\par_alerting</object>
+    <objects name="Passive">
+      <object>objects\obj_sign</object>
+      <object>objects\o_controls</object>
+      <object>objects\obj_danger</object>
+      <object>objects\o_grass</object>
+      <object>objects\o_tree</object>
+    </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\r_splash</room>
     <room>rooms\r_level1</room>
+    <room>rooms\r_level2</room>
+    <room>rooms\r_level3</room>
+    <room>rooms\r_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
